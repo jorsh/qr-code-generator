@@ -130,7 +130,7 @@ END:VCARD`;
 
   useEffect(() => {
     let data = '';
-    
+
     switch (activeTab) {
       case 'url':
         data = formatUrl(urlInput);
@@ -146,7 +146,7 @@ END:VCARD`;
       default:
         data = '';
     }
-    
+
     setQrData(data);
     generateQRCode(data);
   }, [activeTab, urlInput, textInput, contactInfo]);
@@ -375,7 +375,7 @@ END:VCARD`;
 
                 <button
                   onClick={resetForm}
-                  className="w-full px-6 py-3 bg-gray-100 text-gray-700 rounded-xl hover:bg-gray-200 transition-all duration-200 font-medium"
+                  className="w-full px-6 py-3 border-2 border-purple-600 text-purple-600 rounded-xl hover:bg-purple-50 transition-all duration-200 font-medium"
                 >
                   {t('clearAllFields')}
                 </button>
