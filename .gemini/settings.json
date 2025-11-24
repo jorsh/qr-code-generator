@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "atlassian": {
+      "url": "https://mcp.atlassian.com/v1/sse"
+    },
+    "github": {
+      "httpUrl": "https://api.githubcopilot.com/mcp",
+      "headers": {
+        "Authorization": "Bearer $GITHUB_MCP_PAT"
+      }
+    }
+  }
+}
